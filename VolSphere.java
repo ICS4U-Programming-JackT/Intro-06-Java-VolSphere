@@ -4,7 +4,7 @@ import java.util.Scanner;
 * Get volume of sphere from user input in java.
 * @author  Jack Turcotte
 * @version 1.0
-* @since   2025-09-05
+* @since   2025-09-11
 */
 
 // Defines the class
@@ -47,9 +47,10 @@ public final class VolSphere {
         } else {
 
             // Calculate the volume
-            final double volume = (4 / 3) * Math.PI * Math.pow(radiusDouble, 3);
+            final double volume = (4.0 / 3.0) * Math.PI * Math.pow(radiusDouble, 3);
+            final String volumeRounded = String.format("%.3f", volume);
             System.out.println("The volume of a sphere with radius "
-                + radiusDouble + " cm is " + volume + " cm3");
+                + radiusDouble + " cm is " + volumeRounded + " cm3");
         }
         scanner.close();
     }
