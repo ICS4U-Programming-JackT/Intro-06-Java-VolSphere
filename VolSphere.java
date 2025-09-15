@@ -47,7 +47,8 @@ public final class VolSphere {
         } else {
 
             // Calculate the volume
-            final double volume = (4.0 / 3.0) * Math.PI * Math.pow(radiusDouble, 3);
+            final double volume = (4.0 / 3.0) * Math.PI
+            * Math.pow(radiusDouble, 3);
             final String volumeRounded = String.format("%.3f", volume);
             System.out.println("The volume of a sphere with radius "
                 + radiusDouble + " cm is " + volumeRounded + " cm3");
